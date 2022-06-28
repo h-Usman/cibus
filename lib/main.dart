@@ -41,1675 +41,1553 @@ class MyApp extends StatelessWidget {
           //     // centerTitle: true,
           //   ),
           // ),
-
+          body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Container(
+              color: Colors.blue,
+            ),
+            const Text("ALLAH HOO"),
+          ]),
           // backgroundColor: const Color(0xFFf8f8f8),
-          body: SingleChildScrollView(
-              child: Column(
-            children: [
-              Container(
-                // color: Colors.grey[300],
-                width: double.infinity,
-                height: 60,
-
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Expanded(
-                      child: Container(
-                        height: 50,
-                        // width: 50,
-                        margin: const EdgeInsets.only(right: 15),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.white,
-                          // boxShadow: const [
-                          //   BoxShadow(
-                          //     color: Colors.grey,
-                          //     spreadRadius: .3,
-                          //   ),
-                          // ],
-                        ),
-                        // child: const Icon(
-                        //   Icons.search,
-                        //   color: Color(0xFFFF7B2C),
-                        //   size: 24.0,
-                        // ),
-                        child: Container(
-                          // color: Colors.pink,
-                          width: double.infinity,
-                          height: 40,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Container(
-                                height: 25,
-                                width: double.infinity,
-                                child: Container(
-                                  width: double.infinity,
-                                  height: 30,
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        height: 25,
-                                        width: 28,
-                                        child: const Icon(
-                                          Icons.location_on_outlined,
-                                          color: Color(0xFF7858A6),
-                                          size: 24.0,
-                                        ),
-                                      ),
-                                      Container(
-                                        height: 20,
-                                        width: 150,
-                                        padding: const EdgeInsets.only(top: 1),
-                                        child: const Text("Chef n' Stuff",
-                                            style: TextStyle(
-                                              color: Color(0xFF7858A6),
-                                            )),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Container(
-                                height: 25,
-                                width: double.infinity,
-                                child: Container(
-                                  width: double.infinity,
-                                  height: 30,
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        height: 25,
-                                        width: 30,
-                                        child: const Icon(
-                                          Icons.table_restaurant,
-                                          color: Color(0xFF979797),
-                                          size: 24.0,
-                                        ),
-                                      ),
-                                      Container(
-                                        height: 20,
-                                        width: 150,
-                                        padding: const EdgeInsets.only(top: 4),
-                                        child: const Text("#24 (non-smoking)",
-                                            style: TextStyle(
-                                              color: Color(0xFF8E8EA9),
-                                            )),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      height: 50,
-                      width: 50,
-                      child: const Icon(
-                        Icons.dashboard_customize_outlined,
-                        color: Color(0xFF371B58),
-                        size: 24.0,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-
-              Container(
-                height: 40,
-                width: double.infinity,
-                // padding: const EdgeInsets.only(left: 15),
-                child: Text(
-                  "Choose the best dish for you",
-                  style: GoogleFonts.dmSans(
-                    color: const Color(0xFF32324D),
-                    fontSize: 22,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
-              // Container(
-              //   // color: Colors.grey[300],
-              //   width: double.infinity,
-              //   height: 55,
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              //     crossAxisAlignment: CrossAxisAlignment.start,
-              //     children: <Widget>[
-              //       Container(
-              //         height: 54,
-              //         width: 54,
-              //         decoration: BoxDecoration(
-              //           borderRadius: BorderRadius.circular(10),
-              //           color: Colors.white,
-              //           boxShadow: const [
-              //             BoxShadow(
-              //               color: Colors.grey,
-              //               spreadRadius: .3,
-              //             ),
-              //           ],
-              //         ),
-              //         child: const Icon(
-              //           Icons.search,
-              //           color: Color(0xFFFF7B2C),
-              //           size: 24.0,
-              //         ),
-              //       ),
-              //       Container(
-              //         height: 50,
-              //         width: 50,
-              //         decoration: BoxDecoration(
-              //           borderRadius: BorderRadius.circular(10),
-              //           color: Colors.white,
-              //           boxShadow: const [
-              //             BoxShadow(
-              //               color: Colors.grey,
-              //               spreadRadius: .3,
-              //             ),
-              //           ],
-              //         ),
-              //         child: const Icon(
-              //           Icons.filter_list,
-              //           color: Color(0xFFFF7B2C),
-              //           size: 24.0,
-              //         ),
-              //       ),
-              //       Container(
-              //         height: 50,
-              //         width: 100,
-              //         decoration: BoxDecoration(
-              //           borderRadius: BorderRadius.circular(10),
-              //           color: Colors.white,
-              //           boxShadow: const [
-              //             BoxShadow(
-              //               color: Colors.grey,
-              //               spreadRadius: .3,
-              //             ),
-              //           ],
-              //         ),
-              //         child: Column(
-              //           children: const [
-              //             Icon(
-              //               Icons.electric_bike_outlined,
-              //               color: Color(0xFFFF7B2C),
-              //               size: 24.0,
-              //             ),
-              //             // Text("Deleivery"),
-              //           ],
-              //         ),
-              //       ),
-              //       Container(
-              //         height: 50,
-              //         width: 50,
-              //         decoration: BoxDecoration(
-              //           borderRadius: BorderRadius.circular(10),
-              //           color: Colors.white,
-              //           boxShadow: const [
-              //             BoxShadow(
-              //               color: Colors.grey,
-              //               spreadRadius: .3,
-              //             ),
-              //           ],
-              //         ),
-              //         child: const Icon(
-              //           Icons.access_time_outlined,
-              //           color: Color(0xFFFF7B2C),
-              //           size: 24.0,
-              //         ),
-              //       ),
-              //     ],
-              //   ),
-              // ),
-
-              // Container(
-              //   height: 145,
-              //   width: double.infinity,
-              //   // color: Colors.red,
-              //   child: Image.asset(
-              //     "../assets/imges/product.png",
-              //     height: 40,
-              //     width: 100,
-              //   ),
-              // ),
-
-              Container(
-                // color: Colors.grey[300],
-                width: double.infinity,
-                height: 60,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Container(
-                      height: 44,
-                      width: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(16),
-                        color: const Color(0xFFFF7b2c),
-                        boxShadow: const [
-                          BoxShadow(
-                            color: Colors.grey,
-                            spreadRadius: .3,
-                          ),
-                        ],
-                      ),
-                      child: const Center(
-                        child: Text(
-                          "Most Popular",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w700,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      height: 50,
-                      width: 90,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        // color: Colors.white,
-                        boxShadow: const [
-                          BoxShadow(
-                            color: Colors.white,
-                            spreadRadius: .3,
-                          ),
-                        ],
-                      ),
-                      child: const Center(
-                        child: Text(
-                          "Appetizers",
-                          style: TextStyle(
-                            color: Color(0xFF8E8EA9),
-                            // fontWeight: FontWeight.w700,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      height: 50,
-                      width: 90,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        // color: Colors.white,
-                        boxShadow: const [
-                          BoxShadow(
-                            color: Colors.white,
-                            spreadRadius: .3,
-                          ),
-                        ],
-                      ),
-                      child: const Center(
-                        child: Text(
-                          "Main Dishes",
-                          style: TextStyle(
-                            color: Color(0xFF8E8EA9),
-                            // fontWeight: FontWeight.w700,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      height: 50,
-                      width: 50,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        // color: Colors.white,
-                        boxShadow: const [
-                          BoxShadow(
-                            color: Colors.white,
-                            spreadRadius: .3,
-                          ),
-                        ],
-                      ),
-                      child: Image.asset(
-                        "../assets/imges/menu.png",
-                        height: 20,
-                        width: 50,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                height: 25,
-                width: double.infinity,
-                // padding: const EdgeInsets.only(left: 15),
-                child: const Text(
-                  "Appetizers",
-                  style: TextStyle(
-                    color: Color(0xFF666687),
-                    fontSize: 16,
-                    // fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-
-              Container(
-                height: 110,
-                width: double.infinity,
-                padding: const EdgeInsets.all(8),
-                margin: const EdgeInsets.only(bottom: 15),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  color: Colors.white,
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.grey,
-                      spreadRadius: .3,
-                    ),
-                  ],
-                ),
-                child: Container(
-                  // color: Colors.grey[300],
-                  width: double.infinity,
-                  height: 94,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      // Center(
-                      //   child:
-                      Container(
-                        height: 75,
-                        width: 80,
-                        child: Image.asset(
-                          "../assets/imges/egg-toast.png",
-                          height: 40,
-                          width: 100,
-                        ),
-                      ),
-                      // ),
-                      Expanded(
-                        child: Container(
-                          height: 94,
-                          width: double.infinity,
-                          // color: Colors.cyan,
-                          child: Expanded(
-                            child: Row(children: [
-                              Container(
-                                // color: Colors.pink,
-                                width: 245,
-                                height: 94,
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Expanded(
-                                      child: Container(
-                                        height: 94,
-                                        width: double.infinity,
-                                        // color: Colors.red,
-                                        child: Container(
-                                          // color: Colors.grey[300],
-                                          width: double.infinity,
-                                          height: double.infinity,
-                                          child: Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.start,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Container(
-                                                height: 25,
-                                                // width: double.infinity,
-                                                // color: Colors.red,
-                                                child: const Text(
-                                                  'Fattoush salad',
-                                                  style: TextStyle(
-                                                      color: Colors.black),
-                                                ),
-                                              ),
-                                              Container(
-                                                height: 45,
-                                                width: double.infinity,
-                                                // color: Colors.green,
-                                                child: const Text(
-                                                  "A greate and delicious item by chef n' stuff.",
-                                                  overflow:
-                                                      TextOverflow.ellipsis,
-                                                  maxLines: 2,
-                                                  style: TextStyle(
-                                                      color: Color(0xFF8E8EA9)),
-                                                ),
-                                              ),
-                                              Container(
-                                                  height: 23,
-                                                  width: double.infinity,
-                                                  // color: Colors.pink,
-                                                  child: RichText(
-                                                    text: TextSpan(children: [
-                                                      WidgetSpan(
-                                                        child:
-                                                            Transform.translate(
-                                                          offset: const Offset(
-                                                              -1, -12),
-                                                          child: const Text(
-                                                            'RM',
-                                                            //superscript is usually smaller in size
-                                                            textScaleFactor: 1,
-                                                            style: TextStyle(
-                                                                color:
-                                                                    Colors.red,
-                                                                fontSize: 10),
-                                                          ),
-                                                        ),
-                                                      ),
-                                                      const TextSpan(
-                                                          text: '20.5',
-                                                          style: TextStyle(
-                                                              color: Color(
-                                                                  0xFFFF7B2C),
-                                                              fontSize: 23))
-                                                    ]),
-                                                  )),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Container(
-                                      height: 150,
-                                      width: 37,
-                                      // color: Colors.blue,
-                                      child: Container(
-                                        // color: Colors.grey[300],
-                                        width: double.infinity,
-                                        height: double.infinity,
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Container(
-                                              height: 25,
-                                              width: double.infinity,
-                                              margin: const EdgeInsets.only(
-                                                  bottom: 13),
-                                              // color: Colors.red,
-                                              child: FloatingActionButton(
-                                                elevation: 0.0,
-                                                onPressed: () {},
-                                                backgroundColor: Colors.white,
-                                                child: const CircleAvatar(
-                                                  backgroundColor:
-                                                      Color(0xFFB6F1C4),
-                                                  radius: 20,
-                                                  child: ClipOval(
-                                                    child: Icon(
-                                                      Icons.add,
-                                                      color: Color(0xFF20A450),
-                                                      size: 22.0,
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                            Center(
-                                              child: Container(
-                                                height: 30,
-                                                width: double.infinity,
-                                                // color: Colors.green,
-                                                child: const Text(
-                                                  "12",
-                                                  textAlign: TextAlign.center,
-                                                  overflow:
-                                                      TextOverflow.ellipsis,
-                                                  maxLines: 2,
-                                                  style: TextStyle(
-                                                    color: Color(0xFF8E8EA9),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                            Container(
-                                                height: 23,
-                                                width: double.infinity,
-                                                // color: Colors.pink,
-                                                child: FloatingActionButton(
-                                                  elevation: 0.0,
-                                                  onPressed: () {},
-                                                  backgroundColor: Colors.white,
-                                                  child: const CircleAvatar(
-                                                    backgroundColor:
-                                                        Color.fromRGBO(
-                                                            255, 179, 105, 1),
-                                                    radius: 20,
-                                                    child: ClipOval(
-                                                      child: Icon(
-                                                        Icons.remove,
-                                                        color:
-                                                            Color(0xFFFF7b2c),
-                                                        size: 18.0,
-                                                      ),
-                                                    ),
-                                                  ),
-                                                )),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ]),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-
-              Container(
-                height: 110,
-                width: double.infinity,
-                padding: const EdgeInsets.all(8),
-                margin: const EdgeInsets.only(bottom: 15),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  color: Colors.white,
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.grey,
-                      spreadRadius: .3,
-                    ),
-                  ],
-                ),
-                child: Container(
-                  // color: Colors.grey[300],
-                  width: double.infinity,
-                  height: 94,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Center(
-                      //   child:
-                      Container(
-                        height: 75,
-                        width: 80,
-                        child: Image.asset(
-                          "../assets/imges/egg-toast.png",
-                          height: 40,
-                          width: 100,
-                        ),
-                      ),
-                      // ),
-                      Container(
-                        height: 94,
-                        width: 245,
-                        // color: Colors.pink,
-                        child: Row(children: [
-                          Container(
-                            // color: Colors.grey[300],
-                            width: 245,
-                            height: 94,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 94,
-                                  width: 170,
-                                  // color: Colors.red,
-                                  child: Container(
-                                    // color: Colors.grey[300],
-                                    width: double.infinity,
-                                    height: double.infinity,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          height: 25,
-                                          width: double.infinity,
-                                          // color: Colors.red,
-                                          child: const Text(
-                                            'French Fried',
-                                            style:
-                                                TextStyle(color: Colors.black),
-                                          ),
-                                        ),
-                                        Container(
-                                          height: 45,
-                                          width: double.infinity,
-                                          // color: Colors.green,
-                                          child: const Text(
-                                            "This is a very long text about French Fried and, i will show shere all .",
-                                            overflow: TextOverflow.ellipsis,
-                                            maxLines: 2,
-                                            style: TextStyle(
-                                                color: Color(0xFF8E8EA9)),
-                                          ),
-                                        ),
-                                        Container(
-                                          height: 23,
-                                          width: double.infinity,
-                                          // color: Colors.pink,
-                                          child: Row(
-                                            children: [
-                                              RichText(
-                                                text: TextSpan(children: [
-                                                  WidgetSpan(
-                                                    child: Transform.translate(
-                                                      offset:
-                                                          const Offset(-1, -12),
-                                                      child: const Text(
-                                                        'RM',
-                                                        //superscript is usually smaller in size
-                                                        textScaleFactor: 1,
-                                                        style: TextStyle(
-                                                            color: Colors.red,
-                                                            fontSize: 10),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  const TextSpan(
-                                                      text: '6 - ',
-                                                      style: TextStyle(
-                                                          color:
-                                                              Color(0xFFFF7B2C),
-                                                          fontSize: 23)),
-                                                  WidgetSpan(
-                                                    child: Transform.translate(
-                                                      offset:
-                                                          const Offset(-1, -12),
-                                                      child: const Text(
-                                                        'RM',
-                                                        //superscript is usually smaller in size
-                                                        textScaleFactor: 1,
-                                                        style: TextStyle(
-                                                            color: Colors.red,
-                                                            fontSize: 10),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  const TextSpan(
-                                                      text: '12',
-                                                      style: TextStyle(
-                                                          color:
-                                                              Color(0xFFFF7B2C),
-                                                          fontSize: 23)),
-                                                ]),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  height: 150,
-                                  width: 50,
-                                  // color: Colors.blue,
-                                  child: Container(
-                                    // color: Colors.grey[300],
-                                    width: double.infinity,
-                                    height: double.infinity,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          height: 80,
-                                          width: 100,
-                                          margin:
-                                              const EdgeInsets.only(bottom: 13),
-                                          // color: Colors.red,
-                                          child: Center(
-                                            child: FloatingActionButton(
-                                              elevation: 0.0,
-                                              onPressed: () {},
-                                              backgroundColor:
-                                                  Colors.transparent,
-                                              child: const CircleAvatar(
-                                                backgroundColor: Color.fromRGBO(
-                                                    255, 179, 105, 1),
-                                                radius: 20,
-                                                child: ClipOval(
-                                                  child: Icon(
-                                                    Icons.add,
-                                                    color: Color(0xFFFF7b2c),
-                                                    size: 22.0,
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ]),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Container(
-                height: 110,
-                width: double.infinity,
-                padding: const EdgeInsets.all(8),
-                margin: const EdgeInsets.only(bottom: 15),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  color: Colors.white,
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.grey,
-                      spreadRadius: .3,
-                    ),
-                  ],
-                ),
-                child: Container(
-                  // color: Colors.grey[300],
-                  width: double.infinity,
-                  height: 94,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Center(
-                      //   child:
-                      Container(
-                        height: 75,
-                        width: 80,
-                        child: Image.asset(
-                          "../assets/imges/egg-toast.png",
-                          height: 40,
-                          width: 100,
-                        ),
-                      ),
-                      // ),
-                      Container(
-                        height: 94,
-                        width: 245,
-                        // color: Colors.pink,
-                        child: Row(children: [
-                          Container(
-                            // color: Colors.grey[300],
-                            width: 245,
-                            height: 94,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 94,
-                                  width: 170,
-                                  // color: Colors.red,
-                                  child: Container(
-                                    // color: Colors.grey[300],
-                                    width: double.infinity,
-                                    height: double.infinity,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          height: 15,
-                                          width: double.infinity,
-                                          // color: Colors.red,
-                                          child: const Text(
-                                            'Naan',
-                                            style:
-                                                TextStyle(color: Colors.black),
-                                          ),
-                                        ),
-                                        Container(
-                                          height: 50,
-                                          width: double.infinity,
-                                          // color: Colors.green,
-                                          child: Row(
-                                            children: const [
-                                              Icon(
-                                                Icons.star_half_outlined,
-                                                color: Color(0xFFFF7b2c),
-                                                size: 22.0,
-                                              ),
-                                              Text("4.9"),
-                                              Text(
-                                                "(10 reviews)",
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.w400,
-                                                  fontSize: 11,
-                                                ),
-                                              )
-                                            ],
-                                          ),
-                                        ),
-                                        Container(
-                                          height: 23,
-                                          width: double.infinity,
-                                          // color: Colors.pink,
-                                          child: Row(
-                                            children: [
-                                              RichText(
-                                                text: TextSpan(children: [
-                                                  WidgetSpan(
-                                                    child: Transform.translate(
-                                                      offset:
-                                                          const Offset(-1, -12),
-                                                      child: const Text(
-                                                        'RM',
-                                                        //superscript is usually smaller in size
-                                                        textScaleFactor: 1,
-                                                        style: TextStyle(
-                                                            color: Colors.red,
-                                                            fontSize: 10),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  const TextSpan(
-                                                      text: '6.5 ',
-                                                      style: TextStyle(
-                                                          color:
-                                                              Color(0xFFFF7B2C),
-                                                          fontSize: 23)),
-                                                ]),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  height: 150,
-                                  width: 50,
-                                  // color: Colors.blue,
-                                  child: Container(
-                                    // color: Colors.grey[300],
-                                    width: double.infinity,
-                                    height: double.infinity,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          height: 80,
-                                          width: 100,
-                                          margin:
-                                              const EdgeInsets.only(bottom: 13),
-                                          // color: Colors.red,
-                                          child: Center(
-                                            child: FloatingActionButton(
-                                              elevation: 0.0,
-                                              onPressed: () {},
-                                              backgroundColor:
-                                                  Colors.transparent,
-                                              child: const CircleAvatar(
-                                                backgroundColor: Color.fromRGBO(
-                                                    255, 179, 105, 1),
-                                                radius: 20,
-                                                child: ClipOval(
-                                                  child: Icon(
-                                                    Icons.add,
-                                                    color: Color(0xFFFF7b2c),
-                                                    size: 22.0,
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ]),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-
-              Container(
-                height: 25,
-                width: double.infinity,
-                // padding: const EdgeInsets.only(left: 15),
-                child: const Text(
-                  "Main Dishes",
-                  style: TextStyle(
-                    color: Color(0xFF666687),
-                    fontSize: 16,
-                    // fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-              Container(
-                height: 110,
-                width: double.infinity,
-                padding: const EdgeInsets.all(8),
-                margin: const EdgeInsets.only(bottom: 15),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  color: Colors.white,
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.grey,
-                      spreadRadius: .3,
-                    ),
-                  ],
-                ),
-                child: Container(
-                  // color: Colors.grey[300],
-                  width: double.infinity,
-                  height: 94,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Center(
-                      //   child:
-                      Container(
-                        height: 75,
-                        width: 80,
-                        child: Image.asset(
-                          "../assets/imges/egg-toast.png",
-                          height: 40,
-                          width: 100,
-                        ),
-                      ),
-                      // ),
-                      Container(
-                        height: 94,
-                        width: 245,
-                        // color: Colors.pink,
-                        child: Row(children: [
-                          Container(
-                            // color: Colors.grey[300],
-                            width: 245,
-                            height: 94,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 94,
-                                  width: 188,
-                                  // color: Colors.red,
-                                  child: Container(
-                                    // color: Colors.grey[300],
-                                    width: double.infinity,
-                                    height: double.infinity,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          height: 25,
-                                          width: double.infinity,
-                                          // color: Colors.red,
-                                          child: const Text(
-                                            'Fattoush salad',
-                                            style:
-                                                TextStyle(color: Colors.black),
-                                          ),
-                                        ),
-                                        Container(
-                                          height: 45,
-                                          width: double.infinity,
-                                          // color: Colors.green,
-                                          child: const Text(
-                                            "A greate and delicious item by chef n' stuff.",
-                                            overflow: TextOverflow.ellipsis,
-                                            maxLines: 2,
-                                            style: TextStyle(
-                                                color: Color(0xFF8E8EA9)),
-                                          ),
-                                        ),
-                                        Container(
-                                            height: 23,
-                                            width: double.infinity,
-                                            // color: Colors.pink,
-                                            child: RichText(
-                                              text: TextSpan(children: [
-                                                WidgetSpan(
-                                                  child: Transform.translate(
-                                                    offset:
-                                                        const Offset(-1, -12),
-                                                    child: const Text(
-                                                      'RM',
-                                                      //superscript is usually smaller in size
-                                                      textScaleFactor: 1,
-                                                      style: TextStyle(
-                                                          color: Colors.red,
-                                                          fontSize: 10),
-                                                    ),
-                                                  ),
-                                                ),
-                                                const TextSpan(
-                                                    text: '20.5',
-                                                    style: TextStyle(
-                                                        color:
-                                                            Color(0xFFFF7B2C),
-                                                        fontSize: 23))
-                                              ]),
-                                            )),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  height: 150,
-                                  width: 37,
-                                  // color: Colors.blue,
-                                  child: Container(
-                                    // color: Colors.grey[300],
-                                    width: double.infinity,
-                                    height: double.infinity,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          height: 25,
-                                          width: double.infinity,
-                                          margin:
-                                              const EdgeInsets.only(bottom: 13),
-                                          // color: Colors.red,
-                                          child: FloatingActionButton(
-                                            elevation: 0.0,
-                                            onPressed: () {},
-                                            backgroundColor: Colors.white,
-                                            child: const CircleAvatar(
-                                              backgroundColor:
-                                                  Color(0xFFB6F1C4),
-                                              radius: 20,
-                                              child: ClipOval(
-                                                child: Icon(
-                                                  Icons.add,
-                                                  color: Color(0xFF20A450),
-                                                  size: 22.0,
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Center(
-                                          child: Container(
-                                            height: 30,
-                                            width: double.infinity,
-                                            // color: Colors.green,
-                                            child: const Text(
-                                              "12",
-                                              textAlign: TextAlign.center,
-                                              overflow: TextOverflow.ellipsis,
-                                              maxLines: 2,
-                                              style: TextStyle(
-                                                color: Color(0xFF8E8EA9),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Container(
-                                            height: 23,
-                                            width: double.infinity,
-                                            // color: Colors.pink,
-                                            child: FloatingActionButton(
-                                              elevation: 0.0,
-                                              onPressed: () {},
-                                              backgroundColor: Colors.white,
-                                              child: const CircleAvatar(
-                                                backgroundColor: Color.fromRGBO(
-                                                    255, 179, 105, 1),
-                                                radius: 20,
-                                                child: ClipOval(
-                                                  child: Icon(
-                                                    Icons.remove,
-                                                    color: Color(0xFFFF7b2c),
-                                                    size: 18.0,
-                                                  ),
-                                                ),
-                                              ),
-                                            )),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ]),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-
-              Container(
-                height: 110,
-                width: double.infinity,
-                padding: const EdgeInsets.all(8),
-                margin: const EdgeInsets.only(bottom: 15),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  color: Colors.white,
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.grey,
-                      spreadRadius: .3,
-                    ),
-                  ],
-                ),
-                child: Container(
-                  // color: Colors.grey[300],
-                  width: double.infinity,
-                  height: 94,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Center(
-                      //   child:
-                      Container(
-                        height: 75,
-                        width: 80,
-                        child: Image.asset(
-                          "../assets/imges/egg-toast.png",
-                          height: 40,
-                          width: 100,
-                        ),
-                      ),
-                      // ),
-                      Container(
-                        height: 94,
-                        width: 245,
-                        // color: Colors.pink,
-                        child: Row(children: [
-                          Container(
-                            // color: Colors.grey[300],
-                            width: 245,
-                            height: 94,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 94,
-                                  width: 170,
-                                  // color: Colors.red,
-                                  child: Container(
-                                    // color: Colors.grey[300],
-                                    width: double.infinity,
-                                    height: double.infinity,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          height: 25,
-                                          width: double.infinity,
-                                          // color: Colors.red,
-                                          child: const Text(
-                                            'French Fried',
-                                            style:
-                                                TextStyle(color: Colors.black),
-                                          ),
-                                        ),
-                                        Container(
-                                          height: 45,
-                                          width: double.infinity,
-                                          // color: Colors.green,
-                                          child: const Text(
-                                            "This is a very long text about French Fried and, i will show shere all .",
-                                            overflow: TextOverflow.ellipsis,
-                                            maxLines: 2,
-                                            style: TextStyle(
-                                                color: Color(0xFF8E8EA9)),
-                                          ),
-                                        ),
-                                        Container(
-                                          height: 23,
-                                          width: double.infinity,
-                                          // color: Colors.pink,
-                                          child: Row(
-                                            children: [
-                                              RichText(
-                                                text: TextSpan(children: [
-                                                  WidgetSpan(
-                                                    child: Transform.translate(
-                                                      offset:
-                                                          const Offset(-1, -12),
-                                                      child: const Text(
-                                                        'RM',
-                                                        //superscript is usually smaller in size
-                                                        textScaleFactor: 1,
-                                                        style: TextStyle(
-                                                            color: Colors.red,
-                                                            fontSize: 10),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  const TextSpan(
-                                                      text: '6 - ',
-                                                      style: TextStyle(
-                                                          color:
-                                                              Color(0xFFFF7B2C),
-                                                          fontSize: 23)),
-                                                  WidgetSpan(
-                                                    child: Transform.translate(
-                                                      offset:
-                                                          const Offset(-1, -12),
-                                                      child: const Text(
-                                                        'RM',
-                                                        //superscript is usually smaller in size
-                                                        textScaleFactor: 1,
-                                                        style: TextStyle(
-                                                            color: Colors.red,
-                                                            fontSize: 10),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  const TextSpan(
-                                                      text: '12',
-                                                      style: TextStyle(
-                                                          color:
-                                                              Color(0xFFFF7B2C),
-                                                          fontSize: 23)),
-                                                ]),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  height: 150,
-                                  width: 50,
-                                  // color: Colors.blue,
-                                  child: Container(
-                                    // color: Colors.grey[300],
-                                    width: double.infinity,
-                                    height: double.infinity,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          height: 80,
-                                          width: 100,
-                                          margin:
-                                              const EdgeInsets.only(bottom: 13),
-                                          // color: Colors.red,
-                                          child: Center(
-                                            child: FloatingActionButton(
-                                              elevation: 0.0,
-                                              onPressed: () {},
-                                              backgroundColor:
-                                                  Colors.transparent,
-                                              child: const CircleAvatar(
-                                                backgroundColor: Color.fromRGBO(
-                                                    255, 179, 105, 1),
-                                                radius: 20,
-                                                child: ClipOval(
-                                                  child: Icon(
-                                                    Icons.add,
-                                                    color: Color(0xFFFF7b2c),
-                                                    size: 22.0,
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ]),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Container(
-                height: 110,
-                width: double.infinity,
-                padding: const EdgeInsets.all(8),
-                margin: const EdgeInsets.only(bottom: 15),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  color: Colors.white,
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.grey,
-                      spreadRadius: .3,
-                    ),
-                  ],
-                ),
-                child: Container(
-                  // color: Colors.grey[300],
-                  width: double.infinity,
-                  height: 94,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Center(
-                      //   child:
-                      Container(
-                        height: 75,
-                        width: 80,
-                        child: Image.asset(
-                          "../assets/imges/egg-toast.png",
-                          height: 40,
-                          width: 100,
-                        ),
-                      ),
-                      // ),
-                      Container(
-                        height: 94,
-                        width: 245,
-                        // color: Colors.pink,
-                        child: Row(children: [
-                          Container(
-                            // color: Colors.grey[300],
-                            width: 245,
-                            height: 94,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 94,
-                                  width: 170,
-                                  // color: Colors.red,
-                                  child: Container(
-                                    // color: Colors.grey[300],
-                                    width: double.infinity,
-                                    height: double.infinity,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          height: 15,
-                                          width: double.infinity,
-                                          // color: Colors.red,
-                                          child: const Text(
-                                            'Naan',
-                                            style:
-                                                TextStyle(color: Colors.black),
-                                          ),
-                                        ),
-                                        Container(
-                                          height: 50,
-                                          width: double.infinity,
-                                          // color: Colors.green,
-                                          child: Row(
-                                            children: const [
-                                              Icon(
-                                                Icons.star_half_outlined,
-                                                color: Color(0xFFFF7b2c),
-                                                size: 22.0,
-                                              ),
-                                              Text("4.9"),
-                                              Text(
-                                                "(10 reviews)",
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.w400,
-                                                  fontSize: 11,
-                                                ),
-                                              )
-                                            ],
-                                          ),
-                                        ),
-                                        Container(
-                                          height: 23,
-                                          width: double.infinity,
-                                          // color: Colors.pink,
-                                          child: Row(
-                                            children: [
-                                              RichText(
-                                                text: TextSpan(children: [
-                                                  WidgetSpan(
-                                                    child: Transform.translate(
-                                                      offset:
-                                                          const Offset(-1, -12),
-                                                      child: const Text(
-                                                        'RM',
-                                                        //superscript is usually smaller in size
-                                                        textScaleFactor: 1,
-                                                        style: TextStyle(
-                                                            color: Colors.red,
-                                                            fontSize: 10),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  const TextSpan(
-                                                      text: '6.5 ',
-                                                      style: TextStyle(
-                                                          color:
-                                                              Color(0xFFFF7B2C),
-                                                          fontSize: 23)),
-                                                ]),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  height: 150,
-                                  width: 50,
-                                  // color: Colors.blue,
-                                  child: Container(
-                                    // color: Colors.grey[300],
-                                    width: double.infinity,
-                                    height: double.infinity,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          height: 80,
-                                          width: 100,
-                                          margin:
-                                              const EdgeInsets.only(bottom: 13),
-                                          // color: Colors.red,
-                                          child: Center(
-                                            child: FloatingActionButton(
-                                              elevation: 0.0,
-                                              onPressed: () {},
-                                              backgroundColor:
-                                                  Colors.transparent,
-                                              child: const CircleAvatar(
-                                                backgroundColor: Color.fromRGBO(
-                                                    255, 179, 105, 1),
-                                                radius: 20,
-                                                child: ClipOval(
-                                                  child: Icon(
-                                                    Icons.add,
-                                                    color: Color(0xFFFF7b2c),
-                                                    size: 22.0,
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ]),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Stack(
-                alignment: Alignment.bottomCenter,
-                children: <Widget>[
-                  Container(
-                    height: 150,
-                    width: 200,
-                    // color: Colors.red,
-                    // decoration: BoxDecoration(
-                    //   borderRadius: BorderRadius.circular(16),
-                    //   color: const Color(0xFFFF7b2c),
-                    //   boxShadow: const [
-                    //     BoxShadow(
-                    //       color: Colors.grey,
-                    //       spreadRadius: .3,
-                    //     ),
-                    //   ],
-                    // ),
-                  ),
-                  Positioned(
-                    bottom: 0,
-                    right: 0,
-                    left: 0,
-                    child: Container(
-                        height: 100,
-                        width: 200,
-                        margin: const EdgeInsets.only(bottom: 10),
-                        // color: Colors.green,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          // color: const Color(0xFFFF7b2c),
-                          color: Colors.white,
-                          boxShadow: const [
-                            BoxShadow(
-                              color: Colors.grey,
-                              spreadRadius: .3,
-                            ),
-                          ],
-                        ),
-                        child: Row(
-                          children: [
-                            Container(
-                              // color: Colors.pink,
-                              width: 200,
-                              height: 100,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Container(
-                                    height: 50,
-                                    width: 50,
-                                    // color: Colors.red,
-                                    padding: const EdgeInsets.only(left: 15),
-                                    child: const Icon(
-                                      Icons.shopping_cart,
-                                      color: Color(0xFF7858A6),
-                                      size: 24.0,
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Container(
-                                      height: 50,
-                                      // width: 50,
-                                      alignment: Alignment.center,
-                                      // alignment: textAlig
-                                      // color: Colors.green,
-                                      child: const Text(
-                                        "View Cart RM 150.89",
-                                        style: TextStyle(
-                                          color: Color(0xFF7858A6),
-                                        ),
-                                        // textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ],
-                        )),
-                  ),
-                ],
-              ),
-              // Container(
-              //   height: 50,
-              //   width: 100,
-              // Container(
-              //   color: Colors.blue,
-              //   width: 200,
-              //   height: 300,
-              //   child: Stack(
-              //     alignment: Alignment.bottomCenter,
-              //     children: <Widget>[
-              //       Container(
-              //         height: 150,
-              //         width: 250,
-              //         color: Colors.red,
-              //       ),
-              //       Container(
-              //         height: 100,
-              //         width: 100,
-              //         color: Colors.green,
-              //       ),
-              //     ],
-              //   ),
-              // ),
-            ],
-          )),
         ),
       ),
     );
   }
 }
+
+// body: SingleChildScrollView(
+//     child: Column(
+//   children: [
+//     Container(
+//       // color: Colors.grey[300],
+//       width: double.infinity,
+//       height: 60,
+
+//       child: Row(
+//         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//         crossAxisAlignment: CrossAxisAlignment.start,
+//         children: <Widget>[
+//           Expanded(
+//             child: Container(
+//               height: 50,
+//               // width: 50,
+//               margin: const EdgeInsets.only(right: 15),
+//               decoration: BoxDecoration(
+//                 borderRadius: BorderRadius.circular(10),
+//                 color: Colors.white,
+//               ),
+
+//               child: Container(
+//                 // color: Colors.pink,
+//                 width: double.infinity,
+//                 height: 40,
+//                 child: Column(
+//                   mainAxisAlignment: MainAxisAlignment.start,
+//                   crossAxisAlignment: CrossAxisAlignment.start,
+//                   children: [
+//                     Container(
+//                       height: 25,
+//                       width: double.infinity,
+//                       child: Container(
+//                         width: double.infinity,
+//                         height: 30,
+//                         child: Row(
+//                           mainAxisAlignment: MainAxisAlignment.start,
+//                           crossAxisAlignment:
+//                               CrossAxisAlignment.start,
+//                           children: [
+//                             Container(
+//                               height: 25,
+//                               width: 28,
+//                               child: const Icon(
+//                                 Icons.location_on_outlined,
+//                                 color: Color(0xFF7858A6),
+//                                 size: 24.0,
+//                               ),
+//                             ),
+//                             Container(
+//                               height: 20,
+//                               width: 150,
+//                               padding: const EdgeInsets.only(top: 1),
+//                               child: const Text("Chef n' Stuff",
+//                                   style: TextStyle(
+//                                     color: Color(0xFF7858A6),
+//                                   )),
+//                             ),
+//                           ],
+//                         ),
+//                       ),
+//                     ),
+//                     Container(
+//                       height: 25,
+//                       width: double.infinity,
+//                       child: Container(
+//                         width: double.infinity,
+//                         height: 30,
+//                         child: Row(
+//                           mainAxisAlignment: MainAxisAlignment.start,
+//                           crossAxisAlignment:
+//                               CrossAxisAlignment.start,
+//                           children: [
+//                             Container(
+//                               height: 25,
+//                               width: 30,
+//                               child: const Icon(
+//                                 Icons.table_restaurant,
+//                                 color: Color(0xFF979797),
+//                                 size: 24.0,
+//                               ),
+//                             ),
+//                             Container(
+//                               height: 20,
+//                               width: 150,
+//                               padding: const EdgeInsets.only(top: 4),
+//                               child: const Text("#24 (non-smoking)",
+//                                   style: TextStyle(
+//                                     color: Color(0xFF8E8EA9),
+//                                   )),
+//                             ),
+//                           ],
+//                         ),
+//                       ),
+//                     ),
+//                   ],
+//                 ),
+//               ),
+//             ),
+//           ),
+//           Container(
+//             height: 50,
+//             width: 50,
+//             child: const Icon(
+//               Icons.dashboard_customize_outlined,
+//               color: Color(0xFF371B58),
+//               size: 24.0,
+//             ),
+//           ),
+//         ],
+//       ),
+//     ),
+//     Container(
+//       height: 40,
+//       width: double.infinity,
+//       // padding: const EdgeInsets.only(left: 15),
+//       child: Text(
+//         "Choose the best dish for you",
+//         style: GoogleFonts.dmSans(
+//           color: const Color(0xFF32324D),
+//           fontSize: 22,
+//           fontWeight: FontWeight.w500,
+//         ),
+//       ),
+//     ),
+//     Container(
+//       // color: Colors.grey[300],
+//       width: double.infinity,
+//       height: 60,
+//       child: Row(
+//         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//         crossAxisAlignment: CrossAxisAlignment.start,
+//         children: <Widget>[
+//           Container(
+//             height: 44,
+//             width: 100,
+//             decoration: BoxDecoration(
+//               borderRadius: BorderRadius.circular(16),
+//               color: const Color(0xFFFF7b2c),
+//               boxShadow: const [
+//                 BoxShadow(
+//                   color: Colors.grey,
+//                   spreadRadius: .3,
+//                 ),
+//               ],
+//             ),
+//             child: const Center(
+//               child: Text(
+//                 "Most Popular",
+//                 style: TextStyle(
+//                   color: Colors.white,
+//                   fontWeight: FontWeight.w700,
+//                 ),
+//                 textAlign: TextAlign.center,
+//               ),
+//             ),
+//           ),
+//           Container(
+//             height: 50,
+//             width: 90,
+//             decoration: BoxDecoration(
+//               borderRadius: BorderRadius.circular(10),
+//               // color: Colors.white,
+//               boxShadow: const [
+//                 BoxShadow(
+//                   color: Colors.white,
+//                   spreadRadius: .3,
+//                 ),
+//               ],
+//             ),
+//             child: const Center(
+//               child: Text(
+//                 "Appetizers",
+//                 style: TextStyle(
+//                   color: Color(0xFF8E8EA9),
+//                   // fontWeight: FontWeight.w700,
+//                 ),
+//                 textAlign: TextAlign.center,
+//               ),
+//             ),
+//           ),
+//           Container(
+//             height: 50,
+//             width: 90,
+//             decoration: BoxDecoration(
+//               borderRadius: BorderRadius.circular(10),
+//               // color: Colors.white,
+//               boxShadow: const [
+//                 BoxShadow(
+//                   color: Colors.white,
+//                   spreadRadius: .3,
+//                 ),
+//               ],
+//             ),
+//             child: const Center(
+//               child: Text(
+//                 "Main Dishes",
+//                 style: TextStyle(
+//                   color: Color(0xFF8E8EA9),
+//                   // fontWeight: FontWeight.w700,
+//                 ),
+//                 textAlign: TextAlign.center,
+//               ),
+//             ),
+//           ),
+//           Container(
+//             height: 50,
+//             width: 50,
+//             decoration: BoxDecoration(
+//               borderRadius: BorderRadius.circular(10),
+//               // color: Colors.white,
+//               boxShadow: const [
+//                 BoxShadow(
+//                   color: Colors.white,
+//                   spreadRadius: .3,
+//                 ),
+//               ],
+//             ),
+//             child: Image.asset(
+//               "../assets/imges/menu.png",
+//               height: 20,
+//               width: 50,
+//             ),
+//           ),
+//         ],
+//       ),
+//     ),
+//     Container(
+//       height: 25,
+//       width: double.infinity,
+//       // padding: const EdgeInsets.only(left: 15),
+//       child: const Text(
+//         "Appetizers",
+//         style: TextStyle(
+//           color: Color(0xFF666687),
+//           fontSize: 16,
+//           // fontWeight: FontWeight.w600,
+//         ),
+//       ),
+//     ),
+//     Container(
+//       height: 110,
+//       width: double.infinity,
+//       padding: const EdgeInsets.all(8),
+//       margin: const EdgeInsets.only(bottom: 15),
+//       decoration: BoxDecoration(
+//         borderRadius: BorderRadius.circular(16),
+//         color: Colors.white,
+//         boxShadow: const [
+//           BoxShadow(
+//             color: Colors.grey,
+//             spreadRadius: .3,
+//           ),
+//         ],
+//       ),
+//       child: Container(
+//         // color: Colors.grey[300],
+//         width: double.infinity,
+//         height: 94,
+//         child: Row(
+//           mainAxisAlignment: MainAxisAlignment.start,
+//           crossAxisAlignment: CrossAxisAlignment.start,
+//           children: <Widget>[
+//             // Center(
+//             //   child:
+//             Container(
+//               height: 75,
+//               width: 80,
+//               child: Image.asset(
+//                 "../assets/imges/egg-toast.png",
+//                 height: 40,
+//                 width: 100,
+//               ),
+//             ),
+//             // ),
+//             Expanded(
+//               child: Container(
+//                 height: 94,
+//                 width: double.infinity,
+//                 // color: Colors.cyan,
+//                 child: Expanded(
+//                   child: Row(children: [
+//                     Container(
+//                       // color: Colors.pink,
+//                       width: 245,
+//                       height: 94,
+//                       child: Row(
+//                         mainAxisAlignment:
+//                             MainAxisAlignment.spaceBetween,
+//                         crossAxisAlignment: CrossAxisAlignment.start,
+//                         children: [
+//                           Expanded(
+//                             child: Container(
+//                               height: 94,
+//                               width: double.infinity,
+//                               // color: Colors.red,
+//                               child: Container(
+//                                 // color: Colors.grey[300],
+//                                 width: double.infinity,
+//                                 height: double.infinity,
+//                                 child: Column(
+//                                   mainAxisAlignment:
+//                                       MainAxisAlignment.start,
+//                                   crossAxisAlignment:
+//                                       CrossAxisAlignment.start,
+//                                   children: [
+//                                     Container(
+//                                       height: 25,
+//                                       // width: double.infinity,
+//                                       // color: Colors.red,
+//                                       child: const Text(
+//                                         'Fattoush salads',
+//                                         style: TextStyle(
+//                                             color: Colors.black),
+//                                       ),
+//                                     ),
+//                                     Container(
+//                                       height: 45,
+//                                       width: double.infinity,
+//                                       // color: Colors.green,
+//                                       child: const Text(
+//                                         "A greate and delicious item by chef n' stuff.",
+//                                         overflow:
+//                                             TextOverflow.ellipsis,
+//                                         maxLines: 2,
+//                                         style: TextStyle(
+//                                             color: Color(0xFF8E8EA9)),
+//                                       ),
+//                                     ),
+//                                     Container(
+//                                         height: 23,
+//                                         width: double.infinity,
+//                                         // color: Colors.pink,
+//                                         child: RichText(
+//                                           text: TextSpan(children: [
+//                                             WidgetSpan(
+//                                               child:
+//                                                   Transform.translate(
+//                                                 offset: const Offset(
+//                                                     -1, -12),
+//                                                 child: const Text(
+//                                                   'RM',
+//                                                   //superscript is usually smaller in size
+//                                                   textScaleFactor: 1,
+//                                                   style: TextStyle(
+//                                                       color:
+//                                                           Colors.red,
+//                                                       fontSize: 10),
+//                                                 ),
+//                                               ),
+//                                             ),
+//                                             const TextSpan(
+//                                                 text: '20.5',
+//                                                 style: TextStyle(
+//                                                     color: Color(
+//                                                         0xFFFF7B2C),
+//                                                     fontSize: 23))
+//                                           ]),
+//                                         )),
+//                                   ],
+//                                 ),
+//                               ),
+//                             ),
+//                           ),
+//                           Container(
+//                             height: 150,
+//                             width: 37,
+//                             // color: Colors.blue,
+//                             child: Container(
+//                               // color: Colors.grey[300],
+//                               width: double.infinity,
+//                               height: double.infinity,
+//                               child: Column(
+//                                 mainAxisAlignment:
+//                                     MainAxisAlignment.start,
+//                                 crossAxisAlignment:
+//                                     CrossAxisAlignment.start,
+//                                 children: [
+//                                   Container(
+//                                     height: 25,
+//                                     width: double.infinity,
+//                                     margin: const EdgeInsets.only(
+//                                         bottom: 13),
+//                                     // color: Colors.red,
+//                                     child: FloatingActionButton(
+//                                       elevation: 0.0,
+//                                       onPressed: () {},
+//                                       backgroundColor: Colors.white,
+//                                       child: const CircleAvatar(
+//                                         backgroundColor:
+//                                             Color(0xFFB6F1C4),
+//                                         radius: 20,
+//                                         child: ClipOval(
+//                                           child: Icon(
+//                                             Icons.add,
+//                                             color: Color(0xFF20A450),
+//                                             size: 22.0,
+//                                           ),
+//                                         ),
+//                                       ),
+//                                     ),
+//                                   ),
+//                                   Center(
+//                                     child: Container(
+//                                       height: 30,
+//                                       width: double.infinity,
+//                                       // color: Colors.green,
+//                                       child: const Text(
+//                                         "12",
+//                                         textAlign: TextAlign.center,
+//                                         overflow:
+//                                             TextOverflow.ellipsis,
+//                                         maxLines: 2,
+//                                         style: TextStyle(
+//                                           color: Color(0xFF8E8EA9),
+//                                         ),
+//                                       ),
+//                                     ),
+//                                   ),
+//                                   Container(
+//                                       height: 23,
+//                                       width: double.infinity,
+//                                       // color: Colors.pink,
+//                                       child: FloatingActionButton(
+//                                         elevation: 0.0,
+//                                         onPressed: () {},
+//                                         backgroundColor: Colors.white,
+//                                         child: const CircleAvatar(
+//                                           backgroundColor:
+//                                               Color.fromRGBO(
+//                                                   255, 179, 105, 1),
+//                                           radius: 20,
+//                                           child: ClipOval(
+//                                             child: Icon(
+//                                               Icons.remove,
+//                                               color:
+//                                                   Color(0xFFFF7b2c),
+//                                               size: 18.0,
+//                                             ),
+//                                           ),
+//                                         ),
+//                                       )),
+//                                 ],
+//                               ),
+//                             ),
+//                           ),
+//                         ],
+//                       ),
+//                     ),
+//                   ]),
+//                 ),
+//               ),
+//             ),
+//           ],
+//         ),
+//       ),
+//     ),
+//     Container(
+//       height: 110,
+//       width: double.infinity,
+//       padding: const EdgeInsets.all(8),
+//       margin: const EdgeInsets.only(bottom: 15),
+//       decoration: BoxDecoration(
+//         borderRadius: BorderRadius.circular(16),
+//         color: Colors.white,
+//         boxShadow: const [
+//           BoxShadow(
+//             color: Colors.grey,
+//             spreadRadius: .3,
+//           ),
+//         ],
+//       ),
+//       child: Container(
+//         // color: Colors.grey[300],
+//         width: double.infinity,
+//         height: 94,
+//         child: Row(
+//           mainAxisAlignment: MainAxisAlignment.start,
+//           crossAxisAlignment: CrossAxisAlignment.start,
+//           children: [
+//             // Center(
+//             //   child:
+//             Container(
+//               height: 75,
+//               width: 80,
+//               child: Image.asset(
+//                 "../assets/imges/egg-toast.png",
+//                 height: 40,
+//                 width: 100,
+//               ),
+//             ),
+//             // ),
+//             Container(
+//               height: 94,
+//               width: 245,
+//               // color: Colors.pink,
+//               child: Row(children: [
+//                 Container(
+//                   // color: Colors.grey[300],
+//                   width: 245,
+//                   height: 94,
+//                   child: Row(
+//                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                     crossAxisAlignment: CrossAxisAlignment.start,
+//                     children: [
+//                       Container(
+//                         height: 94,
+//                         width: 170,
+//                         // color: Colors.red,
+//                         child: Container(
+//                           // color: Colors.grey[300],
+//                           width: double.infinity,
+//                           height: double.infinity,
+//                           child: Column(
+//                             mainAxisAlignment:
+//                                 MainAxisAlignment.start,
+//                             crossAxisAlignment:
+//                                 CrossAxisAlignment.start,
+//                             children: [
+//                               Container(
+//                                 height: 25,
+//                                 width: double.infinity,
+//                                 // color: Colors.red,
+//                                 child: const Text(
+//                                   'French Fried',
+//                                   style:
+//                                       TextStyle(color: Colors.black),
+//                                 ),
+//                               ),
+//                               Container(
+//                                 height: 45,
+//                                 width: double.infinity,
+//                                 // color: Colors.green,
+//                                 child: const Text(
+//                                   "This is a very long text about French Fried and, i will show shere all .",
+//                                   overflow: TextOverflow.ellipsis,
+//                                   maxLines: 2,
+//                                   style: TextStyle(
+//                                       color: Color(0xFF8E8EA9)),
+//                                 ),
+//                               ),
+//                               Container(
+//                                 height: 23,
+//                                 width: double.infinity,
+//                                 // color: Colors.pink,
+//                                 child: Row(
+//                                   children: [
+//                                     RichText(
+//                                       text: TextSpan(children: [
+//                                         WidgetSpan(
+//                                           child: Transform.translate(
+//                                             offset:
+//                                                 const Offset(-1, -12),
+//                                             child: const Text(
+//                                               'RM',
+//                                               //superscript is usually smaller in size
+//                                               textScaleFactor: 1,
+//                                               style: TextStyle(
+//                                                   color: Colors.red,
+//                                                   fontSize: 10),
+//                                             ),
+//                                           ),
+//                                         ),
+//                                         const TextSpan(
+//                                             text: '6 - ',
+//                                             style: TextStyle(
+//                                                 color:
+//                                                     Color(0xFFFF7B2C),
+//                                                 fontSize: 23)),
+//                                         WidgetSpan(
+//                                           child: Transform.translate(
+//                                             offset:
+//                                                 const Offset(-1, -12),
+//                                             child: const Text(
+//                                               'RM',
+//                                               //superscript is usually smaller in size
+//                                               textScaleFactor: 1,
+//                                               style: TextStyle(
+//                                                   color: Colors.red,
+//                                                   fontSize: 10),
+//                                             ),
+//                                           ),
+//                                         ),
+//                                         const TextSpan(
+//                                             text: '12',
+//                                             style: TextStyle(
+//                                                 color:
+//                                                     Color(0xFFFF7B2C),
+//                                                 fontSize: 23)),
+//                                       ]),
+//                                     ),
+//                                   ],
+//                                 ),
+//                               ),
+//                             ],
+//                           ),
+//                         ),
+//                       ),
+//                       Container(
+//                         height: 150,
+//                         width: 50,
+//                         // color: Colors.blue,
+//                         child: Container(
+//                           // color: Colors.grey[300],
+//                           width: double.infinity,
+//                           height: double.infinity,
+//                           child: Column(
+//                             mainAxisAlignment:
+//                                 MainAxisAlignment.start,
+//                             crossAxisAlignment:
+//                                 CrossAxisAlignment.start,
+//                             children: [
+//                               Container(
+//                                 height: 80,
+//                                 width: 100,
+//                                 margin:
+//                                     const EdgeInsets.only(bottom: 13),
+//                                 // color: Colors.red,
+//                                 child: Center(
+//                                   child: FloatingActionButton(
+//                                     elevation: 0.0,
+//                                     onPressed: () {},
+//                                     backgroundColor:
+//                                         Colors.transparent,
+//                                     child: const CircleAvatar(
+//                                       backgroundColor: Color.fromRGBO(
+//                                           255, 179, 105, 1),
+//                                       radius: 20,
+//                                       child: ClipOval(
+//                                         child: Icon(
+//                                           Icons.add,
+//                                           color: Color(0xFFFF7b2c),
+//                                           size: 22.0,
+//                                         ),
+//                                       ),
+//                                     ),
+//                                   ),
+//                                 ),
+//                               ),
+//                             ],
+//                           ),
+//                         ),
+//                       ),
+//                     ],
+//                   ),
+//                 ),
+//               ]),
+//             ),
+//           ],
+//         ),
+//       ),
+//     ),
+//     Container(
+//       height: 110,
+//       width: double.infinity,
+//       padding: const EdgeInsets.all(8),
+//       margin: const EdgeInsets.only(bottom: 15),
+//       decoration: BoxDecoration(
+//         borderRadius: BorderRadius.circular(16),
+//         color: Colors.white,
+//         boxShadow: const [
+//           BoxShadow(
+//             color: Colors.grey,
+//             spreadRadius: .3,
+//           ),
+//         ],
+//       ),
+//       child: Container(
+//         // color: Colors.grey[300],
+//         width: double.infinity,
+//         height: 94,
+//         child: Row(
+//           mainAxisAlignment: MainAxisAlignment.start,
+//           crossAxisAlignment: CrossAxisAlignment.start,
+//           children: [
+//             // Center(
+//             //   child:
+//             Container(
+//               height: 75,
+//               width: 80,
+//               child: Image.asset(
+//                 "../assets/imges/egg-toast.png",
+//                 height: 40,
+//                 width: 100,
+//               ),
+//             ),
+//             // ),
+//             Container(
+//               height: 94,
+//               width: 245,
+//               // color: Colors.pink,
+//               child: Row(children: [
+//                 Container(
+//                   // color: Colors.grey[300],
+//                   width: 245,
+//                   height: 94,
+//                   child: Row(
+//                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                     crossAxisAlignment: CrossAxisAlignment.start,
+//                     children: [
+//                       Container(
+//                         height: 94,
+//                         width: 170,
+//                         // color: Colors.red,
+//                         child: Container(
+//                           // color: Colors.grey[300],
+//                           width: double.infinity,
+//                           height: double.infinity,
+//                           child: Column(
+//                             mainAxisAlignment:
+//                                 MainAxisAlignment.start,
+//                             crossAxisAlignment:
+//                                 CrossAxisAlignment.start,
+//                             children: [
+//                               Container(
+//                                 height: 15,
+//                                 width: double.infinity,
+//                                 // color: Colors.red,
+//                                 child: const Text(
+//                                   'Naan',
+//                                   style:
+//                                       TextStyle(color: Colors.black),
+//                                 ),
+//                               ),
+//                               Container(
+//                                 height: 50,
+//                                 width: double.infinity,
+//                                 // color: Colors.green,
+//                                 child: Row(
+//                                   children: const [
+//                                     Icon(
+//                                       Icons.star_half_outlined,
+//                                       color: Color(0xFFFF7b2c),
+//                                       size: 22.0,
+//                                     ),
+//                                     Text("4.9"),
+//                                     Text(
+//                                       "(10 reviews)",
+//                                       style: TextStyle(
+//                                         fontWeight: FontWeight.w400,
+//                                         fontSize: 11,
+//                                       ),
+//                                     )
+//                                   ],
+//                                 ),
+//                               ),
+//                               Container(
+//                                 height: 23,
+//                                 width: double.infinity,
+//                                 // color: Colors.pink,
+//                                 child: Row(
+//                                   children: [
+//                                     RichText(
+//                                       text: TextSpan(children: [
+//                                         WidgetSpan(
+//                                           child: Transform.translate(
+//                                             offset:
+//                                                 const Offset(-1, -12),
+//                                             child: const Text(
+//                                               'RM',
+//                                               //superscript is usually smaller in size
+//                                               textScaleFactor: 1,
+//                                               style: TextStyle(
+//                                                   color: Colors.red,
+//                                                   fontSize: 10),
+//                                             ),
+//                                           ),
+//                                         ),
+//                                         const TextSpan(
+//                                             text: '6.5 ',
+//                                             style: TextStyle(
+//                                                 color:
+//                                                     Color(0xFFFF7B2C),
+//                                                 fontSize: 23)),
+//                                       ]),
+//                                     ),
+//                                   ],
+//                                 ),
+//                               ),
+//                             ],
+//                           ),
+//                         ),
+//                       ),
+//                       Container(
+//                         height: 150,
+//                         width: 50,
+//                         // color: Colors.blue,
+//                         child: Container(
+//                           // color: Colors.grey[300],
+//                           width: double.infinity,
+//                           height: double.infinity,
+//                           child: Column(
+//                             mainAxisAlignment:
+//                                 MainAxisAlignment.start,
+//                             crossAxisAlignment:
+//                                 CrossAxisAlignment.start,
+//                             children: [
+//                               Container(
+//                                 height: 80,
+//                                 width: 100,
+//                                 margin:
+//                                     const EdgeInsets.only(bottom: 13),
+//                                 // color: Colors.red,
+//                                 child: Center(
+//                                   child: FloatingActionButton(
+//                                     elevation: 0.0,
+//                                     onPressed: () {},
+//                                     backgroundColor:
+//                                         Colors.transparent,
+//                                     child: const CircleAvatar(
+//                                       backgroundColor: Color.fromRGBO(
+//                                           255, 179, 105, 1),
+//                                       radius: 20,
+//                                       child: ClipOval(
+//                                         child: Icon(
+//                                           Icons.add,
+//                                           color: Color(0xFFFF7b2c),
+//                                           size: 22.0,
+//                                         ),
+//                                       ),
+//                                     ),
+//                                   ),
+//                                 ),
+//                               ),
+//                             ],
+//                           ),
+//                         ),
+//                       ),
+//                     ],
+//                   ),
+//                 ),
+//               ]),
+//             ),
+//           ],
+//         ),
+//       ),
+//     ),
+//     Container(
+//       height: 25,
+//       width: double.infinity,
+//       // padding: const EdgeInsets.only(left: 15),
+//       child: const Text(
+//         "Main Dishes",
+//         style: TextStyle(
+//           color: Color(0xFF666687),
+//           fontSize: 16,
+//           // fontWeight: FontWeight.w600,
+//         ),
+//       ),
+//     ),
+//     Container(
+//       height: 110,
+//       width: double.infinity,
+//       padding: const EdgeInsets.all(8),
+//       margin: const EdgeInsets.only(bottom: 15),
+//       decoration: BoxDecoration(
+//         borderRadius: BorderRadius.circular(16),
+//         color: Colors.white,
+//         boxShadow: const [
+//           BoxShadow(
+//             color: Colors.grey,
+//             spreadRadius: .3,
+//           ),
+//         ],
+//       ),
+//       child: Container(
+//         // color: Colors.grey[300],
+//         width: double.infinity,
+//         height: 94,
+//         child: Row(
+//           mainAxisAlignment: MainAxisAlignment.start,
+//           crossAxisAlignment: CrossAxisAlignment.start,
+//           children: [
+//             // Center(
+//             //   child:
+//             Container(
+//               height: 75,
+//               width: 80,
+//               child: Image.asset(
+//                 "../assets/imges/egg-toast.png",
+//                 height: 40,
+//                 width: 100,
+//               ),
+//             ),
+//             // ),
+//             Container(
+//               height: 94,
+//               width: 245,
+//               // color: Colors.pink,
+//               child: Row(children: [
+//                 Container(
+//                   // color: Colors.grey[300],
+//                   width: 245,
+//                   height: 94,
+//                   child: Row(
+//                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                     crossAxisAlignment: CrossAxisAlignment.start,
+//                     children: [
+//                       Container(
+//                         height: 94,
+//                         width: 188,
+//                         // color: Colors.red,
+//                         child: Container(
+//                           // color: Colors.grey[300],
+//                           width: double.infinity,
+//                           height: double.infinity,
+//                           child: Column(
+//                             mainAxisAlignment:
+//                                 MainAxisAlignment.start,
+//                             crossAxisAlignment:
+//                                 CrossAxisAlignment.start,
+//                             children: [
+//                               Container(
+//                                 height: 25,
+//                                 width: double.infinity,
+//                                 // color: Colors.red,
+//                                 child: const Text(
+//                                   'Fattoush salads',
+//                                   style:
+//                                       TextStyle(color: Colors.black),
+//                                 ),
+//                               ),
+//                               Container(
+//                                 height: 45,
+//                                 width: double.infinity,
+//                                 // color: Colors.green,
+//                                 child: const Text(
+//                                   "A greate and delicious item by chef n' stuff.",
+//                                   overflow: TextOverflow.ellipsis,
+//                                   maxLines: 2,
+//                                   style: TextStyle(
+//                                       color: Color(0xFF8E8EA9)),
+//                                 ),
+//                               ),
+//                               Container(
+//                                   height: 23,
+//                                   width: double.infinity,
+//                                   // color: Colors.pink,
+//                                   child: RichText(
+//                                     text: TextSpan(children: [
+//                                       WidgetSpan(
+//                                         child: Transform.translate(
+//                                           offset:
+//                                               const Offset(-1, -12),
+//                                           child: const Text(
+//                                             'RM',
+//                                             //superscript is usually smaller in size
+//                                             textScaleFactor: 1,
+//                                             style: TextStyle(
+//                                                 color: Colors.red,
+//                                                 fontSize: 10),
+//                                           ),
+//                                         ),
+//                                       ),
+//                                       const TextSpan(
+//                                           text: '20.5',
+//                                           style: TextStyle(
+//                                               color:
+//                                                   Color(0xFFFF7B2C),
+//                                               fontSize: 23))
+//                                     ]),
+//                                   )),
+//                             ],
+//                           ),
+//                         ),
+//                       ),
+//                       Container(
+//                         height: 150,
+//                         width: 37,
+//                         // color: Colors.blue,
+//                         child: Container(
+//                           // color: Colors.grey[300],
+//                           width: double.infinity,
+//                           height: double.infinity,
+//                           child: Column(
+//                             mainAxisAlignment:
+//                                 MainAxisAlignment.start,
+//                             crossAxisAlignment:
+//                                 CrossAxisAlignment.start,
+//                             children: [
+//                               Container(
+//                                 height: 25,
+//                                 width: double.infinity,
+//                                 margin:
+//                                     const EdgeInsets.only(bottom: 13),
+//                                 // color: Colors.red,
+//                                 child: FloatingActionButton(
+//                                   elevation: 0.0,
+//                                   onPressed: () {},
+//                                   backgroundColor: Colors.white,
+//                                   child: const CircleAvatar(
+//                                     backgroundColor:
+//                                         Color(0xFFB6F1C4),
+//                                     radius: 20,
+//                                     child: ClipOval(
+//                                       child: Icon(
+//                                         Icons.add,
+//                                         color: Color(0xFF20A450),
+//                                         size: 22.0,
+//                                       ),
+//                                     ),
+//                                   ),
+//                                 ),
+//                               ),
+//                               Center(
+//                                 child: Container(
+//                                   height: 30,
+//                                   width: double.infinity,
+//                                   // color: Colors.green,
+//                                   child: const Text(
+//                                     "12",
+//                                     textAlign: TextAlign.center,
+//                                     overflow: TextOverflow.ellipsis,
+//                                     maxLines: 2,
+//                                     style: TextStyle(
+//                                       color: Color(0xFF8E8EA9),
+//                                     ),
+//                                   ),
+//                                 ),
+//                               ),
+//                               Container(
+//                                   height: 23,
+//                                   width: double.infinity,
+//                                   // color: Colors.pink,
+//                                   child: FloatingActionButton(
+//                                     elevation: 0.0,
+//                                     onPressed: () {},
+//                                     backgroundColor: Colors.white,
+//                                     child: const CircleAvatar(
+//                                       backgroundColor: Color.fromRGBO(
+//                                           255, 179, 105, 1),
+//                                       radius: 20,
+//                                       child: ClipOval(
+//                                         child: Icon(
+//                                           Icons.remove,
+//                                           color: Color(0xFFFF7b2c),
+//                                           size: 18.0,
+//                                         ),
+//                                       ),
+//                                     ),
+//                                   )),
+//                             ],
+//                           ),
+//                         ),
+//                       ),
+//                     ],
+//                   ),
+//                 ),
+//               ]),
+//             ),
+//           ],
+//         ),
+//       ),
+//     ),
+//     Container(
+//       height: 110,
+//       width: double.infinity,
+//       padding: const EdgeInsets.all(8),
+//       margin: const EdgeInsets.only(bottom: 15),
+//       decoration: BoxDecoration(
+//         borderRadius: BorderRadius.circular(16),
+//         color: Colors.white,
+//         boxShadow: const [
+//           BoxShadow(
+//             color: Colors.grey,
+//             spreadRadius: .3,
+//           ),
+//         ],
+//       ),
+//       child: Container(
+//         // color: Colors.grey[300],
+//         width: double.infinity,
+//         height: 94,
+//         child: Row(
+//           mainAxisAlignment: MainAxisAlignment.start,
+//           crossAxisAlignment: CrossAxisAlignment.start,
+//           children: [
+//             // Center(
+//             //   child:
+//             Container(
+//               height: 75,
+//               width: 80,
+//               child: Image.asset(
+//                 "../assets/imges/egg-toast.png",
+//                 height: 40,
+//                 width: 100,
+//               ),
+//             ),
+//             // ),
+//             Container(
+//               height: 94,
+//               width: 245,
+//               // color: Colors.pink,
+//               child: Row(children: [
+//                 Container(
+//                   // color: Colors.grey[300],
+//                   width: 245,
+//                   height: 94,
+//                   child: Row(
+//                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                     crossAxisAlignment: CrossAxisAlignment.start,
+//                     children: [
+//                       Container(
+//                         height: 94,
+//                         width: 170,
+//                         // color: Colors.red,
+//                         child: Container(
+//                           // color: Colors.grey[300],
+//                           width: double.infinity,
+//                           height: double.infinity,
+//                           child: Column(
+//                             mainAxisAlignment:
+//                                 MainAxisAlignment.start,
+//                             crossAxisAlignment:
+//                                 CrossAxisAlignment.start,
+//                             children: [
+//                               Container(
+//                                 height: 25,
+//                                 width: double.infinity,
+//                                 // color: Colors.red,
+//                                 child: const Text(
+//                                   'French Fried',
+//                                   style:
+//                                       TextStyle(color: Colors.black),
+//                                 ),
+//                               ),
+//                               Container(
+//                                 height: 45,
+//                                 width: double.infinity,
+//                                 // color: Colors.green,
+//                                 child: const Text(
+//                                   "This is a very long text about French Fried and, i will show shere all .",
+//                                   overflow: TextOverflow.ellipsis,
+//                                   maxLines: 2,
+//                                   style: TextStyle(
+//                                       color: Color(0xFF8E8EA9)),
+//                                 ),
+//                               ),
+//                               Container(
+//                                 height: 23,
+//                                 width: double.infinity,
+//                                 // color: Colors.pink,
+//                                 child: Row(
+//                                   children: [
+//                                     RichText(
+//                                       text: TextSpan(children: [
+//                                         WidgetSpan(
+//                                           child: Transform.translate(
+//                                             offset:
+//                                                 const Offset(-1, -12),
+//                                             child: const Text(
+//                                               'RM',
+//                                               //superscript is usually smaller in size
+//                                               textScaleFactor: 1,
+//                                               style: TextStyle(
+//                                                   color: Colors.red,
+//                                                   fontSize: 10),
+//                                             ),
+//                                           ),
+//                                         ),
+//                                         const TextSpan(
+//                                             text: '6 - ',
+//                                             style: TextStyle(
+//                                                 color:
+//                                                     Color(0xFFFF7B2C),
+//                                                 fontSize: 23)),
+//                                         WidgetSpan(
+//                                           child: Transform.translate(
+//                                             offset:
+//                                                 const Offset(-1, -12),
+//                                             child: const Text(
+//                                               'RM',
+//                                               //superscript is usually smaller in size
+//                                               textScaleFactor: 1,
+//                                               style: TextStyle(
+//                                                   color: Colors.red,
+//                                                   fontSize: 10),
+//                                             ),
+//                                           ),
+//                                         ),
+//                                         const TextSpan(
+//                                             text: '12',
+//                                             style: TextStyle(
+//                                                 color:
+//                                                     Color(0xFFFF7B2C),
+//                                                 fontSize: 23)),
+//                                       ]),
+//                                     ),
+//                                   ],
+//                                 ),
+//                               ),
+//                             ],
+//                           ),
+//                         ),
+//                       ),
+//                       Container(
+//                         height: 150,
+//                         width: 50,
+//                         // color: Colors.blue,
+//                         child: Container(
+//                           // color: Colors.grey[300],
+//                           width: double.infinity,
+//                           height: double.infinity,
+//                           child: Column(
+//                             mainAxisAlignment:
+//                                 MainAxisAlignment.start,
+//                             crossAxisAlignment:
+//                                 CrossAxisAlignment.start,
+//                             children: [
+//                               Container(
+//                                 height: 80,
+//                                 width: 100,
+//                                 margin:
+//                                     const EdgeInsets.only(bottom: 13),
+//                                 // color: Colors.red,
+//                                 child: Center(
+//                                   child: FloatingActionButton(
+//                                     elevation: 0.0,
+//                                     onPressed: () {},
+//                                     backgroundColor:
+//                                         Colors.transparent,
+//                                     child: const CircleAvatar(
+//                                       backgroundColor: Color.fromRGBO(
+//                                           255, 179, 105, 1),
+//                                       radius: 20,
+//                                       child: ClipOval(
+//                                         child: Icon(
+//                                           Icons.add,
+//                                           color: Color(0xFFFF7b2c),
+//                                           size: 22.0,
+//                                         ),
+//                                       ),
+//                                     ),
+//                                   ),
+//                                 ),
+//                               ),
+//                             ],
+//                           ),
+//                         ),
+//                       ),
+//                     ],
+//                   ),
+//                 ),
+//               ]),
+//             ),
+//           ],
+//         ),
+//       ),
+//     ),
+//     Container(
+//       height: 110,
+//       width: double.infinity,
+//       padding: const EdgeInsets.all(8),
+//       margin: const EdgeInsets.only(bottom: 15),
+//       decoration: BoxDecoration(
+//         borderRadius: BorderRadius.circular(16),
+//         color: Colors.white,
+//         boxShadow: const [
+//           BoxShadow(
+//             color: Colors.grey,
+//             spreadRadius: .3,
+//           ),
+//         ],
+//       ),
+//       child: Container(
+//         // color: Colors.grey[300],
+//         width: double.infinity,
+//         height: 94,
+//         child: Row(
+//           mainAxisAlignment: MainAxisAlignment.start,
+//           crossAxisAlignment: CrossAxisAlignment.start,
+//           children: [
+//             // Center(
+//             //   child:
+//             Container(
+//               height: 75,
+//               width: 80,
+//               child: Image.asset(
+//                 "../assets/imges/egg-toast.png",
+//                 height: 40,
+//                 width: 100,
+//               ),
+//             ),
+//             // ),
+//             Container(
+//               height: 94,
+//               width: 245,
+//               // color: Colors.pink,
+//               child: Row(children: [
+//                 Container(
+//                   // color: Colors.grey[300],
+//                   width: 245,
+//                   height: 94,
+//                   child: Row(
+//                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                     crossAxisAlignment: CrossAxisAlignment.start,
+//                     children: [
+//                       Container(
+//                         height: 94,
+//                         width: 170,
+//                         // color: Colors.red,
+//                         child: Container(
+//                           // color: Colors.grey[300],
+//                           width: double.infinity,
+//                           height: double.infinity,
+//                           child: Column(
+//                             mainAxisAlignment:
+//                                 MainAxisAlignment.start,
+//                             crossAxisAlignment:
+//                                 CrossAxisAlignment.start,
+//                             children: [
+//                               Container(
+//                                 height: 15,
+//                                 width: double.infinity,
+//                                 // color: Colors.red,
+//                                 child: const Text(
+//                                   'Naan',
+//                                   style:
+//                                       TextStyle(color: Colors.black),
+//                                 ),
+//                               ),
+//                               Container(
+//                                 height: 50,
+//                                 width: double.infinity,
+//                                 // color: Colors.green,
+//                                 child: Row(
+//                                   children: const [
+//                                     Icon(
+//                                       Icons.star_half_outlined,
+//                                       color: Color(0xFFFF7b2c),
+//                                       size: 22.0,
+//                                     ),
+//                                     Text("4.9"),
+//                                     Text(
+//                                       "(10 reviews)",
+//                                       style: TextStyle(
+//                                         fontWeight: FontWeight.w400,
+//                                         fontSize: 11,
+//                                       ),
+//                                     )
+//                                   ],
+//                                 ),
+//                               ),
+//                               Container(
+//                                 height: 23,
+//                                 width: double.infinity,
+//                                 // color: Colors.pink,
+//                                 child: Row(
+//                                   children: [
+//                                     RichText(
+//                                       text: TextSpan(children: [
+//                                         WidgetSpan(
+//                                           child: Transform.translate(
+//                                             offset:
+//                                                 const Offset(-1, -12),
+//                                             child: const Text(
+//                                               'RM',
+//                                               //superscript is usually smaller in size
+//                                               textScaleFactor: 1,
+//                                               style: TextStyle(
+//                                                   color: Colors.red,
+//                                                   fontSize: 10),
+//                                             ),
+//                                           ),
+//                                         ),
+//                                         const TextSpan(
+//                                             text: '6.5 ',
+//                                             style: TextStyle(
+//                                                 color:
+//                                                     Color(0xFFFF7B2C),
+//                                                 fontSize: 23)),
+//                                       ]),
+//                                     ),
+//                                   ],
+//                                 ),
+//                               ),
+//                             ],
+//                           ),
+//                         ),
+//                       ),
+//                       Container(
+//                         height: 150,
+//                         width: 50,
+//                         // color: Colors.blue,
+//                         child: Container(
+//                           // color: Colors.grey[300],
+//                           width: double.infinity,
+//                           height: double.infinity,
+//                           child: Column(
+//                             mainAxisAlignment:
+//                                 MainAxisAlignment.start,
+//                             crossAxisAlignment:
+//                                 CrossAxisAlignment.start,
+//                             children: [
+//                               Container(
+//                                 height: 80,
+//                                 width: 100,
+//                                 margin:
+//                                     const EdgeInsets.only(bottom: 13),
+//                                 // color: Colors.red,
+//                                 child: Center(
+//                                   child: FloatingActionButton(
+//                                     elevation: 0.0,
+//                                     onPressed: () {},
+//                                     backgroundColor:
+//                                         Colors.transparent,
+//                                     child: const CircleAvatar(
+//                                       backgroundColor: Color.fromRGBO(
+//                                           255, 179, 105, 1),
+//                                       radius: 20,
+//                                       child: ClipOval(
+//                                         child: Icon(
+//                                           Icons.add,
+//                                           color: Color(0xFFFF7b2c),
+//                                           size: 22.0,
+//                                         ),
+//                                       ),
+//                                     ),
+//                                   ),
+//                                 ),
+//                               ),
+//                             ],
+//                           ),
+//                         ),
+//                       ),
+//                     ],
+//                   ),
+//                 ),
+//               ]),
+//             ),
+//           ],
+//         ),
+//       ),
+//     ),
+//     Stack(
+//       alignment: Alignment.bottomCenter,
+//       children: <Widget>[
+//         Container(
+//           height: 150,
+//           width: 200,
+//         ),
+//         Positioned(
+//           bottom: 0,
+//           right: 0,
+//           left: 0,
+//           child: Container(
+//               height: 100,
+//               width: 200,
+//               margin: const EdgeInsets.only(bottom: 10),
+//               // color: Colors.green,
+//               decoration: BoxDecoration(
+//                 borderRadius: BorderRadius.circular(16),
+//                 // color: const Color(0xFFFF7b2c),
+//                 color: Colors.white,
+//                 boxShadow: const [
+//                   BoxShadow(
+//                     color: Colors.grey,
+//                     spreadRadius: .3,
+//                   ),
+//                 ],
+//               ),
+//               child: Row(
+//                 children: [
+//                   Container(
+//                     // color: Colors.pink,
+//                     width: 200,
+//                     height: 100,
+//                     child: Row(
+//                       mainAxisAlignment: MainAxisAlignment.start,
+//                       crossAxisAlignment: CrossAxisAlignment.start,
+//                       children: [
+//                         Container(
+//                           height: 50,
+//                           width: 50,
+//                           // color: Colors.red,
+//                           padding: const EdgeInsets.only(left: 15),
+//                           child: const Icon(
+//                             Icons.shopping_cart,
+//                             color: Color(0xFF7858A6),
+//                             size: 24.0,
+//                           ),
+//                         ),
+//                         Expanded(
+//                           child: Container(
+//                             height: 50,
+//                             // width: 50,
+//                             alignment: Alignment.center,
+//                             // alignment: textAlig
+//                             // color: Colors.green,
+//                             child: const Text(
+//                               "View Cart RM 150.89",
+//                               style: TextStyle(
+//                                 color: Color(0xFF7858A6),
+//                               ),
+//                               // textAlign: TextAlign.center,
+//                             ),
+//                           ),
+//                         )
+//                       ],
+//                     ),
+//                   ),
+//                 ],
+//               )),
+//         ),
+//       ],
+//     ),
+//     Container(
+//       height: 50,
+//       width: 100,
+
+//       // Container(
+//       //   color: Colors.blue,
+//       //   width: 200,
+//       //   height: 300,
+//       //   child: Stack(
+//       //     alignment: Alignment.bottomCenter,
+//       //     children: <Widget>[
+//       //       Container(
+//       //         height: 150,
+//       //         width: 250,
+//       //         color: Colors.red,
+//       //       ),
+//       //       Container(
+//       //         height: 100,
+//       //         width: 100,
+//       //         color: Colors.green,
+//       //       ),
+//       //     ],
+//       //   ),
+//       // ),
+//     ),
+//   ],
+// )),
 
 // body: Column(
 //   children: [
