@@ -29,29 +29,7 @@ class MyLogin extends StatelessWidget {
           // const EdgeInsets.only(top: 10, left: 15, right: 15, bottom: 10),
           child: Scaffold(
             backgroundColor: Colors.white,
-            // appBar: PreferredSize(
-            //   preferredSize: const Size.fromHeight(50.0),
-            //   child: AppBar(
-            //     // toolbarHeight: 0,
-            //     elevation: 0,
-            //     backgroundColor: const Color(0xFFffffff),
-            //     titleSpacing: -10.0,
-            //     leading: IconButton(
-            //       icon: const Icon(Icons.arrow_back, color: Color(0xFF666687)),
-            //       alignment: const Alignment(-1.5, 0.0),
-            //       onPressed: () => Navigator.of(context).pop(),
-            //     ),
-            //     title: const Text(
-            //       "Restoran Fazlina Hari Maju",
-            //       style: TextStyle(
-            //         color: Color(0xFF32324D),
-            //         fontSize: 16,
-            //       ),
-            //     ),
-            //     // centerTitle: true,
-
-            //   ),
-            // ),
+            
             body: Stack(
               children: <Widget>[
                 Positioned.fill(
