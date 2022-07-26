@@ -8,12 +8,12 @@ import 'package:sizer/sizer.dart';
 
 void main() {
   runApp(
-    // const MyLogin(),
+  const MyLogin(),
     // const MyOrders(),
     // const MyMultiOrders(),
     // const MyDashboard(),
     // const MyTest(),
-    const MyViewOrders(),
+    // const MyViewOrders(),
   );
 }
 
