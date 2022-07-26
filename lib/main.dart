@@ -29,7 +29,7 @@ class MyLogin extends StatelessWidget {
           // const EdgeInsets.only(top: 10, left: 15, right: 15, bottom: 10),
           child: Scaffold(
             backgroundColor: Colors.white,
-            
+
             body: Stack(
               children: <Widget>[
                 Positioned.fill(
